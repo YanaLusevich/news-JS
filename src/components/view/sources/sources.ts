@@ -5,9 +5,9 @@ class Sources {
     public draw(data: SourceItem[]): void {
         const fragment = document.createDocumentFragment();
         const sourceItemTemp = document.querySelector<HTMLTemplateElement>('#sourceItemTemp');
-        const soursesContainer = document.querySelector<HTMLElement>('.sourses');
+        const sourcesContainer = document.querySelector<HTMLElement>('.sources');
 
-        if (!sourceItemTemp || !soursesContainer) {
+        if (!sourceItemTemp || !sourcesContainer) {
             return;
         }
 
@@ -27,7 +27,7 @@ class Sources {
             fragment.append(sourceClone);
         });
 
-        soursesContainer.append(fragment);
+        sourcesContainer.append(fragment);
     }
 }
 
